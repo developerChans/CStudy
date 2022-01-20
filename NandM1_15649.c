@@ -3,11 +3,11 @@ int n,m;
 int arr[8];
 void n_m1 (int depth) {
     for(int i = 1; i <= n; i++ ) { // i가 1부터 n까지 첫 시작점
-        int j;
         if(depth == 0) { // 초기 단계에 i를 시작점으로 설정
             arr[0] = i;
         }
         else {
+            int j;
             for(j = 0; j < depth; j++) {
                 if(arr[j] == i)  // 0부터 깊이만큼 탐색시 초기 값인 i가 존재하면 이미 탐색했던 것 따라서 멈춰 선언
                     break;
@@ -29,7 +29,7 @@ void n_m1 (int depth) {
 }
 
 int main() {
-    scanf("%d %d", n, m);
+    scanf("%d %d", &n, &m);
     n_m1(0);
     return 0;
 }
