@@ -1,5 +1,23 @@
 #include <stdio.h>
 
+void sudoku(int (*board)[9], int n) {
+    for(int i = 0; i < 9; i++) {
+        for(int j = 0; j < 9; j++) {
+            if(board[i][j] == 0) {
+                board[i][j] == n;
+                if(i / 3 == 0) {
+                    if(j / 3 ==0) {
+                        for(int k = 0; k < 3; k++) {
+                            for(int)
+                        }
+                    }
+            }
+            }
+            
+        }    
+    }
+}
+
 int main() {
     int arr[9][9];
     for(int i = 0; i < 9; i++){
