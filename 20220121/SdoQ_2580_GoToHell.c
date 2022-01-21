@@ -128,7 +128,6 @@ void sudoku(int** board, int columnNum, int inputNum) {
                 board[rowNum][columnNum] = inputNum;
                 if(check(board,rowNum,columnNum,inputNum)) {
                     sudoku(board, columnNum+1, inputNum);
-                } else {
                     board[rowNum][columnNum] = 0;
                 }
             }
